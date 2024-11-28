@@ -1,0 +1,113 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff1d4;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header .titulo {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Carrusel */
+.carrusel {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #ffe4c4;
+}
+
+.carousel img {
+    width: 100%;
+    display: none;
+    animation: fade 1s ease-in-out;
+}
+
+.carousel img:first-child {
+    display: block;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.contenido-sobre-imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.contenido-sobre-imagen p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Botón "Jugar" */
+.btn-jugar {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-jugar:hover {
+    background-color: rgba(255, 115, 0, 0.719);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.descargas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-descarga {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff7f50;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-descarga:hover {
+    background-color: #ff4500;
+}
